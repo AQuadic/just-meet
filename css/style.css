@@ -100,9 +100,7 @@ nav h1 {
   color: #d37f1c;
 }
 @media (max-width: 992px) {
-  .img_meet {
-    opacity: 0.5;
-  }
+  
   .text_back h3 {
     font-size: 310px;
     line-height: 240px;
@@ -112,11 +110,19 @@ nav h1 {
     max-width: 100%;
   }
 }
-@media (max-width: 750px) {
-  .text_back h3 {
-    font-size: 260px;
-    line-height: 200px;
+@media (max-width: 768px) {
+  .text_back {
+    display: none;
   }
+  .img_meet {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    max-height: 80%;
+}
+nav .btn_page{
+  display: none;
+}
 }
 @media (max-width: 500px) {
   .btn_page {
@@ -128,11 +134,7 @@ nav h1 {
     font-size: 32px;
   
 }
-.img_meet{
-  top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-}
+
 }
 .close span {
   color: red;
