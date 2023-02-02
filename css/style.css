@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans2";
+  src: url("../fonts/DMSans-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans3";
+  src: url("../fonts/DMSans-Regular.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+h1,
+h3 {
+  font-family: "DM Sans3";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: start;
+  font-family: "DM Sans2";
+}
+p {
+  margin: 0;
+}
+h2 {
+  font-family: "DM Sans";
+}
+body {
+  position: relative;
+  background: #ff9f2f;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+nav h1 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 22px;
+}
+.img_meet{
+  position: absolute; top: 0%; left: 50%; transform: translate(-50% ,0%);z-index: -1   ; max-width: 100%;
+}
+.btn_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 54px;
+  background: #0d1f29;
+  border-radius: 8px;
+  color: white;
+}
+.btn_page p {
+  padding: 0px 10px;
+}
+.soon {
+  margin-top: 160px;
+}
+.soon h2 {
+  font-weight: 600;
+  font-size: 24px;
+  padding: 0px 20px;
+  line-height: 56px;
+}
+.soon h3 {
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 56px;
+}
+.soon .btn_page {
+  margin-top: 40px;
+}
+.text_back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  overflow: hidden;
+  max-width: 100%;
+}
+.text_back h3 {
+  font-weight: 300;
+  font-size: 400px;
+  line-height: 317px;
+  text-align: right;
+  color: #d37f1c;
+}
+@media (max-width: 992px) {
+  .img_meet {
+    opacity: 0.5;
+  }
+  .text_back h3 {
+    font-size: 310px;
+    line-height: 240px;
+  }
+}
+@media (max-width: 750px) {
+  .text_back h3 {
+    font-size: 260px;
+    line-height: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .btn_page {
+    width: 136px;
+    height: 42px;
+}
+  nav h1 {
+   
+    font-size: 32px;
+  
+}
+.img_meet{
+  top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+}
