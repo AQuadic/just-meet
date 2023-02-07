@@ -210,6 +210,9 @@ position: relative;
   flex-direction: row-reverse;
   color: white;
 }
+.linkat .all_btn .btn_linkat:hover{
+  text-decoration: none;
+}
 .linkat .all_btn .btn_linkat h2 {
   font-size: 24px;
   line-height: 140%;
